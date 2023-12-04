@@ -1,5 +1,7 @@
 from time import time
 
+# TODO: Add comments to your solution
+
 NUM_PARSER = {'one': '1',
               'two': '2',
               'three': '3',
@@ -88,7 +90,7 @@ if __name__ == '__main__':
         cal_seq = cal_doc.read().split()
 
     start = time()
-    cal_sum = calibrate_document_naive(sequence=cal_seq, enable_part_two=activate_part_two)
+    cal_sum = calibrate_document_naive(sequence=cal_seq)
     print(f"Calibration sum naive: {cal_sum}")
     print(f"Execution time naive: {round(time()-start,8)}s")
 
